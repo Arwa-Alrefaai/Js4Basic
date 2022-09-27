@@ -1,0 +1,21 @@
+#calcresult{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.blueviolet{
+    background-color: blueviolet;
+}
+.yellow{
+    background-color: yellow;
+}
+.aqua{
+    background-color: aqua;
+}
