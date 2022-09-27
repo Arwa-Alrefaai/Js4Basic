@@ -20,25 +20,22 @@ function sum(){
 //------------Ex1-2-------------
 
 document.getElementById("selectv").addEventListener("click" , colorbg)
-let valselect = document.getElementById("selectv").value;
+// let valselect = document.getElementById("selectv").value;
 let colorE = " ";
 function colorbg(){
-    if (valselect == " IT " ){
+    let valselect = document.getElementById("selectv");
+    let optionVal = valselect.value;
+    console.log(optionVal);
+    if (optionVal =="it"){
+    colorE = "blueviolet";
+}
+else{
+        if (optionVal == "hospitality" ){
+             colorE = "aqua";}
+  else {
+            optionVal =="driver";
         colorE = "yellow";
-}
-     
-
-else{
-         if (valselect == "hospitality" ){
-             colorE = "blueviolet";}
-
-else{
-        valselect=="driver";
-        colorE = "aqua";
     }
-    document.getElementById("result2").setAttribute("class",colorE);
 }
-   
-
-
+    document.getElementById("result2").setAttribute("class", colorE);  
 }
